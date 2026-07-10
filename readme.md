@@ -1,24 +1,26 @@
-# Сайт сети пансионатов для пожилых людей
+*In English* | *[На русском](readme.ru.md)*
 
-Статичные файлы и статичный сайт, [размещенный на Github Pages](https://dimitri-tikhomirov.github.io/lastochka-website/), находятся в папке `docs/`.
+# Retirement home chain website
 
-Дизайн сайта сделан с нуля, включая обработку фотографий и создание макета сайта.
+Static files and a static website [hosted on GitHub Pages](https://dimitri-tikhomirov.github.io/lastochka-website/) are located in the `public/` folder.
 
-Программирование полностью сделано вручную, включая такие элементы, как:
+The website design was done from scratch, including photo editing and mockup creation.
 
-- Адаптивное прогрессивно сворачивающееся меню, переходящее в мобильное меню на маленьких экранах.
-- Шапка сайта при прокрутке уменьшается в размере и фиксируется.
-- Плавная прокрутка к секциям.
-- Отложенная загрузка фотографий, обложек видео, карты.
-- Ровная плитка без пробелов из фотографий разного размера (masonry layout).
-- Слайдер картинок с отложенной загрузкой, навигацией с клавиатуры и навигацией проведением пальцем по экрану.
-- Асинхронная отправка формы.
-- Серверная часть для отправки писем с использованием Node.js с модулем Nodemailer.
+All programming was done manually, including elements such as:
 
-Файлы CSS и JS разбиты на главы, между которыми можно переключаться выполняя поиск по `/**`.
+- Adaptive, progressively collapsing menu that transitions to a mobile menu on small screens.
+- The header shrinks in size and becomes fixed ("sticky") when scrolling.
+- Smooth scrolling to website sections.
+- Lazy loading of photos, video thumbnails, and the integrated map.
+- Justified layout without gaps of photos of different sizes.
+- Image slider with lazy loading, keyboard navigation, and swipe navigation.
+- Asynchronous form submission.
+- Server-side part for sending emails using Node.js with the Nodemailer module.
 
-Реальный сайт размещен на VPS с помощью PM2, Nginx в качестве обратного прокси, SSL сертификата от Let's Encrypt.
+CSS and JS files are divided into sections that you can switch between by searching for `/**`.
 
-На момент создания сайт получает высшие оценки качества от Google:
+The actual website is hosted on a VPS using PM2, with Nginx as a reverse proxy, and an SSL certificate from Let's Encrypt.
 
-![Оценки сайта от Google](google-lighthouse.gif)
+At the time of creation, the website receives the highest quality ratings from Google:
+
+![Google ratings](google-lighthouse.gif)
